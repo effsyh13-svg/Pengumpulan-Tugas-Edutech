@@ -1,0 +1,406 @@
+/* ==========================================
+   RESET & BASE STYLES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* ==========================================
+   NAVIGATION BAR
+   ========================================== */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(20px);
+    background: rgba(15, 23, 42, 0.7);
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+.hero {
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.hello {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 3.5rem; 
+    font-weight: 800;
+    white-space: nowrap; 
+}
+
+.hero h2 {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.description {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.hero-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #38bdf8;
+    box-shadow: 0 0 40px rgba(56, 189, 248, .5);
+}
+
+/* ==========================================
+   COMMON LAYOUT COMPONENTS
+   ========================================== */
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 20px;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #38bdf8;
+}
+
+.timeline-item,
+.experience-card,
+.contact-card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #334155;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* ==========================================
+   ABOUT ME (2 KOLOM - BERSIH TANPA FOTO)
+   ========================================== */
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.about-text-card {
+    flex: 1.2;
+    background: #1e293b;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #334155;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-highlights {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.highlight-item {
+    background: #1e293b;
+    border: 1px solid #334155;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: translateX(8px);
+    border-color: #38bdf8;
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.08);
+}
+
+.highlight-item i {
+    font-size: 2.2rem;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.highlight-item h4 {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.highlight-item p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* ==========================================
+   STRUKTUR SKILLS GRID
+   ========================================== */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.skills-category h3 {
+    font-size: 1.4rem;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-left: 4px solid #38bdf8;
+    padding-left: 12px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.skill-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    padding: 15px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.skill-card i {
+    font-size: 1.8rem;
+    color: #38bdf8;
+}
+
+.skill-card span {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #020617;
+}
+
+/* ==========================================
+   KEYFRAMES ANIMASI UTAMA
+   ========================================== */
+@keyframes muterTerus {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes mantulIkon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+@keyframes denyutIkon {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 2px #38bdf8); }
+    50% { transform: scale(1.2); filter: drop-shadow(0 0 8px #38bdf8); }
+}
+
+@keyframes goyangIkon {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-15deg); }
+    75% { transform: rotate(15deg); }
+}
+
+/* ==========================================
+   PENERAPAN EFEK ANIMASI ELEMEN
+   ========================================== */
+
+/* Efek Putar Otomatis (Tanpa Hover) */
+.skill-card i.bx-cog {
+    animation: muterTerus 4s linear infinite;
+}
+.about-highlights .highlight-item i.bx-atom {
+    animation: muterTerus 6s linear infinite;
+}
+
+/* Efek Hover Umum Kartu Skill */
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.15);
+}
+
+/* Efek Hover Ikon Spesifik */
+.skill-card:hover i.bx-bolt-circle,
+.skill-card:hover i.bx-chip {
+    animation: denyutIkon 0.8s ease-in-out infinite;
+}
+
+.skill-card:hover i.bx-wifi,
+.skill-card:hover i.bxl-html5,
+.skill-card:hover i.bxl-css3,
+.skill-card:hover i.bxl-python,
+.skill-card:hover i.bxs-file-doc {
+    animation: mantulIkon 0.6s ease-in-out infinite;
+}
+
+.skill-card:hover i.bx-refresh {
+    transform: rotate(360deg);
+    transition: transform 0.6s ease-in-out;
+}
+
+.skill-card:hover i.bx-brain,
+.skill-card:hover i.bx-group,
+.skill-card:hover i.bx-chat,
+.skill-card:hover i.bx-crown,
+.skill-card:hover i.bx-time-five,
+.skill-card:hover i.bx-analyse {
+    animation: goyangIkon 0.5s ease-in-out infinite;
+}
+
+/* ==========================================
+   RESPONSIF SMARTPHONE / LAYAR HP
+   ========================================== */
+@media(max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        white-space: normal; 
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 40px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-text-card {
+        padding: 25px;
+    }
+
+    .highlight-item:hover {
+        transform: translateY(-4px);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .skill-card {
+        padding: 12px 15px;
+        gap: 10px;
+    }
+
+    .skill-card i {
+        font-size: 1.5rem;
+    }
+
+    .skill-card span {
+        font-size: 0.85rem;
+    }
+}
