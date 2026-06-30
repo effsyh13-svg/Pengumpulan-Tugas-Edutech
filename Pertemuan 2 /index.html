@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Effan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mochamad Effan Syah</h1>
+    </header>
+
+    <section class="about">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah mahasiswa Program Studi Teknik Elektro Universitas Lampung
+        yang memiliki minat pada bidang Internet of Things (IoT), Artificial
+        Intelligence (AI), Embedded System, serta pengembangan perangkat lunak.
+        Saya aktif mengikuti kompetisi, organisasi, dan terus mengembangkan
+        kemampuan di bidang teknologi untuk menciptakan solusi yang inovatif dan
+        bermanfaat bagi masyarakat.
+      </p>
+    </section>
+
+    <section class="education">
+      <h2>Riwayat Pendidikan</h2>
+      <ul>
+        <li>SMK Negeri 1 Jogjakarta</li>
+        <li>Universitas Lampung - S1 Teknik Elektro (2025 - Sekarang)</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>Skill</h2>
+
+      <div class="skill-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>C++</span>
+        <span>Arduino</span>
+        <span>ESP32</span>
+        <span>IoT</span>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Proyek Saya</h2>
+
+      <div class="filter-buttons">
+        <button onclick="filterProject('all')">Semua</button>
+        <button onclick="filterProject('web')">Web Dev</button>
+        <button onclick="filterProject('iot')">IoT</button>
+        <button onclick="filterProject('ai')">AI</button>
+      </div>
+
+      <div class="project-list">
+        <div class="project-item web">
+          <h3>Website Portofolio</h3>
+          <p>
+            Membangun website portofolio menggunakan HTML, CSS, dan JavaScript.
+          </p>
+        </div>
+
+        <div class="project-item iot">
+          <h3>Smart Irrigation System</h3>
+          <p>
+            Sistem penyiraman tanaman otomatis berbasis ESP32, sensor kelembapan
+            tanah, DHT11, LCD, relay, dan buzzer.
+          </p>
+        </div>
+
+        <div class="project-item ai">
+          <h3>EduTech AI</h3>
+          <p>
+            Pengembangan platform pembelajaran berbasis Artificial Intelligence
+            untuk meningkatkan kualitas pendidikan.
+          </p>
+        </div>
+
+        <div class="project-item iot">
+          <h3>Monitoring Suhu dan Kelembapan</h3>
+          <p>
+            Sistem monitoring lingkungan secara real-time menggunakan sensor
+            IoT.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Kontak</h2>
+
+      <p>Email: effansyah13@gmail.com</p>
+      <p>
+        Instagram:
+        <a href="https://instagram.com/eppaannnn" target="_blank">
+          @eppaannnn
+        </a>
+      </p>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/effsyh13-svg" target="_blank">
+          effsyh13-svg
+        </a>
+      </p>
+    </section>
+
+    <section class="contact-form">
+      <h2>Hubungi Saya</h2>
+
+      <input type="text" id="messageInput" placeholder="Tulis pesan Anda" />
+
+      <button onclick="validateForm()">Kirim</button>
+
+      <p id="warningMessage"></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Effan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
